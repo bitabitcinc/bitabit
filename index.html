@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Shape - Creative Designer</title>
-    <link href="templatemo-personal-style.css" rel="stylesheet">
+    <title>Bit A Bit</title>
+    <link href="style.css" rel="stylesheet">
 
 <!--
 
-TemplateMo 593 personal shape
+TemplateMo 593
 
 https://templatemo.com/tm-593-personal-shape
 
@@ -18,11 +18,10 @@ https://templatemo.com/tm-593-personal-shape
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">Bit a Bit</div>
+            <div class="logo"><img src="images/monitobit.png" width="50" height="40"></div>
             <ul class="nav-links">
                 <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Nosotras</a></li>
-                <li><a href="#portfolio">Artículos</a></li>
+                <li><a href="#articles">Sobre Nosotras</a></li>
                 <li><a href="#contact">Guías</a></li>
             </ul>
             <div class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -37,7 +36,7 @@ https://templatemo.com/tm-593-personal-shape
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-nav-links">
             <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre Nosotras</a></li>
+            <li><a href="#articles">Sobre Nosotras</a></li>
             <li><a href="#portfolio">Artículos</a></li>
             <li><a href="#contact">Guías</a></li>
         </ul>
@@ -50,44 +49,44 @@ https://templatemo.com/tm-593-personal-shape
             <h1>¡Bienvenidx!</h1>
             <p class="subtitle">Bit A Bit es un proyecto hecho por y para alumnas de la Licenciatura en Inteligencia Artificial, nuestro objetivo es acompañarnos y ayudarnos en este proceso.<br> 
             En esta página podrás encontrar artículos escritos por chicas parte de nuestra red, guías de algunas de las materias de la carrera e información sobre los seminarios que organizarmos, ¡Date una vuelta por nuestras secciones!</p>
-            <!-- <a href="#portfolio" class="cta-button">Explore My Work</a>
-             <div class="logo-image"></div>-->
+            <!-- <a href="#portfolio" class="cta-button">Explore My Work</a>-->
+            <div class="logo-image fade-in"></div>
         </div>
-        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView()"></div>
+        <div class="scroll-indicator" onclick="document.getElementById('articles').scrollIntoView()"></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- articles section -->
+    <section id="articles" class="articles">
         <div class="container">
             <h2 class="section-title fade-in">Hecho por nosotras</h2>
-            <div class="about-text">
+            <div class="articles-text">
                 <h2>Mini artículos escritos por chicas parte de la red sobre temas de nuestro interés o proyectos en los que hemos trabajado. Esta sección está creada con el propósito de mostrar lo que podemos hacer con lo que aprendemos en la carrera, explícandolo de la manera más sencilla y menos técnica posible.</h2>
             </div>
-            <div class="about-content">
-                    <!--<h3>Passionate about creating meaningful digital experiences</h3>-->
-                <div class="about-image val slide-in-left"></div>
-                <div class="about-text slide-in-right">
-                    <h3>"Entre redes cerebrales y noches sin dormir"</h3>
+            <div class="articles-content">
+
+                <a href="articles/val/val.html" class="articles-link"><div class="articles-image val slide-in-left"></div></a>
+                <div class="articles-text slide-in-right">
+                    <a href="articles/val/val.html" class="articles-link"><h3>"Entre redes cerebrales y noches sin dormir"</h3></a>
                     <h4>Valeria Svetlhana Gutiérrez López</h4>
                     <p>¿Puede el insomnio dejar huellas en el cerebro? Esta investigación explora cómo las redes cerebrales de personas con insomnio primario difieren de las de quienes duermen bien, usando EEG y aprendizaje automático. Los resultados sugieren que el insomnio altera patrones de conectividad neuronal, abriendo la puerta a diagnósticos más precisos y no invasivos desde la neurociencia.</p>
-                    <div class="skills">
-                        <span class="skill-tag">Neurociencia</span>
-                        <span class="skill-tag">Modelos de Decisión</span>
-                        <span class="skill-tag">Random Forest</span>
+                    <div class="topics">
+                        <span class="topic-tag">Neurociencia</span>
+                        <span class="topic-tag">Modelos de Decisión</span>
+                        <span class="topic-tag">Aprendizaje Automático</span>
                     </div>
                 </div>
 
-                <div class="about-text slide-in-left">
-                    <h3>"El arte de esconder secretos cuánticamente"</h3>
+                <div class="articles-text slide-in-left">
+                    <a href="articles/giu/cypto.html" class="articles-link"><h3>"El arte de esconder secretos cuánticamente"</h3></a>
                     <h4>Giulia López Maldonado</h4>
                     <p>Los humanos llevamos miles de años buscando formas para esconder información que solo queremos que algunas personas conozcan, la mayoría de sistemas digitales actuales confían su seguridad en problemas que nuestros computadores actuales no pueden resolver pero, ¿Alguien puede pensar en la cuántica? Un cómputador cuántico puede resolver esos problemas rápidamente, por esto, el cómputo cuántico propone interesantes soluciones a esta situación.</p>
-                    <div class="skills">
-                        <span class="skill-tag">Criptografía</span>
-                        <span class="skill-tag">Cómputo cuántico</span>
-                        <span class="skill-tag">Ciberseguridad</span>
+                    <div class="topics">
+                        <span class="topic-tag">Criptografía</span>
+                        <span class="topic-tag">Cómputo cuántico</span>
+                        <span class="topic-tag">Ciberseguridad</span>
                     </div>
                 </div>
-                <div class="about-image giu slide-in-right"></div>
+                <a href="articles/giu/cypto.html" class="articles-link"><div class="articles-image giu slide-in-right"></div></a>
             </div>
         </div>
     </section>
@@ -96,85 +95,39 @@ https://templatemo.com/tm-593-personal-shape
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title fade-in">Código Abierto</h2>
+            <p>Pláticas con egresadas o especialistas, o de la red, con intereses comunes pero objetivos claros... ¡Espéralo muy pronto! </p>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image"></div>
                     <div class="portfolio-content">
-                        <h4>E-commerce Platform</h4>
-                        <p>A modern, responsive e-commerce solution with focus on user experience and conversion optimization. Built with scalability and performance in mind.</p>
+                        <h4>Próximamente</h4>
+                        <p>---.</p>
                         <div class="portfolio-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">---</span>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image"></div>
                     <div class="portfolio-content">
-                        <h4>Brand Identity System</h4>
-                        <p>Complete visual identity redesign for a tech startup, including logo, guidelines, and digital assets. Creating a cohesive brand experience across all touchpoints.</p>
+                        <h4>Próximamente</h4>
+                        <p>---.</p>
                         <div class="portfolio-tech">
-                            <span class="tech-tag">Illustrator</span>
-                            <span class="tech-tag">Photoshop</span>
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">After Effects</span>
+                            <span class="tech-tag">---</span>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image"></div>
                     <div class="portfolio-content">
-                        <h4>Mobile App Design</h4>
-                        <p>Intuitive mobile app interface for a fitness tracking application with focus on accessibility and user engagement through gamification.</p>
+                        <h4>Próximamente</h4>
+                        <p>---.</p>
                         <div class="portfolio-tech">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">Principle</span>
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Lottie</span>
+                            <span class="tech-tag">---</span>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-content">
-                        <h4>Dashboard Interface</h4>
-                        <p>Clean and functional dashboard design for data analytics platform with complex information architecture and real-time data visualization.</p>
-                        <div class="portfolio-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">SCSS</span>
-                            <span class="tech-tag">Chart.js</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-content">
-                        <h4>Marketing Website</h4>
-                        <p>Modern marketing website with interactive animations and optimized conversion funnels. Built for maximum performance and SEO.</p>
-                        <div class="portfolio-tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">Framer Motion</span>
-                            <span class="tech-tag">Tailwind CSS</span>
-                            <span class="tech-tag">Vercel</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"></div>
-                    <div class="portfolio-content">
-                        <h4>Creative Portfolio</h4>
-                        <p>Artistic portfolio website featuring immersive galleries, smooth transitions, and creative storytelling for a digital artist.</p>
-                        <div class="portfolio-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Three.js</span>
-                            <span class="tech-tag">GSAP</span>
-                            <span class="tech-tag">WebGL</span>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -183,20 +136,14 @@ https://templatemo.com/tm-593-personal-shape
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-left">
-                    <p>&copy; 2025 Personal Shape. All rights reserved.</p>
-                </div>
-                <div class="footer-right">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Use</a>
-                    <a href="#sitemap">Sitemap</a>
-                    <a href="https://templatemo.com" target="_blank" rel="noopener nofollow">Provided by TemplateMo</a>
-                </div>
+                <p>¡Síguenos!</p>
+            <div class="footer-logo-image"></div>
+            <a href="https://www.instagram.com/bitabitcinc">@bitabitcinc</a>
             </div>
         </div>
     </footer>
 
-<script src="templatemo-personal-javascripts.js"></script>
+<script src="dynamic.js"></script>
 
 </body>
 </html>
