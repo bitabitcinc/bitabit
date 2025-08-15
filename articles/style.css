@@ -14,6 +14,11 @@ https://templatemo.com/tm-593-personal-shape
   src: url(../fonts/VT323-Regular.ttf);
 }
 
+@font-face {
+  font-family: body-font;
+  src: 'Roboto'; /*'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;*/
+}
+
         * {
             margin: 0;
             padding: 0;
@@ -80,13 +85,22 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .footer-content {
-            display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 1rem;
             position: relative;
             z-index: 2;
+            text-align: center;
+        }
+
+        .footer p{
+            color: var(--text-primary);
+            font-family: VT323;
+            font-size: 1.75rem;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            
         }
 
         .footer-left p {
@@ -129,6 +143,13 @@ https://templatemo.com/tm-593-personal-shape
             width: 100%;
         }
 
+        .footer-logo-image {
+            width: 100px;
+            height: 100px;
+            background: url('../images/instagram-logo.png') center/cover no-repeat;
+            margin: 0 auto;
+        }
+
         /* Footer Mobile Responsiveness */
         @media (max-width: 768px) {
             .footer-content {
@@ -156,7 +177,7 @@ https://templatemo.com/tm-593-personal-shape
 
         :root {
             --primary-color: #553A9C;
-            --secondary-color: #8b5cf6;
+            --secondary-color: #a38cdc;
             --text-primary: #0f172a;
             --text-secondary: #64748b;
             --text-light: #ffffff;
@@ -164,6 +185,7 @@ https://templatemo.com/tm-593-personal-shape
             --bg-secondary: #ece6fa;
             --bg-dark: #0f172a;
             --bg-card: rgba(255, 255, 255, 0.95);
+            --gradient-updown: linear-gradient(180deg,rgba(202, 189, 235, 1) 9%, rgba(255, 255, 255, 0) 18%);
             --gradient-primary: linear-gradient(90deg,rgba(24, 8, 64, 1) 32%, rgba(85, 58, 156, 1) 67%, rgba(163, 140, 220, 1) 90%);
             --gradient-elegant: linear-gradient(181deg,rgba(24, 8, 64, 1) 3%, rgba(85, 58, 156, 1) 47%, rgba(163, 140, 220, 1) 90%);
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -186,16 +208,18 @@ https://templatemo.com/tm-593-personal-shape
 
         /* Navigation */
         nav {
+            font-family: VT323;
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(163, 140, 220, 1);
-            /*background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(163, 140, 220, 1) 53%, rgba(163, 140, 220, 1) 100%);*/
+            /*background: rgba(163, 140, 220, 1);
+            background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(163, 140, 220, 1) 53%, rgba(163, 140, 220, 1) 100%);*/
+            background: linear-gradient(180deg,rgba(163, 140, 220, 1) 10%, rgba(202, 189, 235, 1) 50%);
             backdrop-filter: blur(20px);
             z-index: 1000;
             padding: 1rem 0;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border-bottom: 1px; /*solid rgba(255, 255, 255, 0.1);*/
+            border-bottom: 1px;
         }
 
         nav.scrolled {
@@ -223,7 +247,7 @@ https://templatemo.com/tm-593-personal-shape
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 2rem;
             align-items: center;
         }
 
@@ -271,7 +295,7 @@ https://templatemo.com/tm-593-personal-shape
         .hamburger {
             width: 25px;
             height: 3px;
-            background: var(--text-primary);
+            background: var(--secondary-color);
             margin: 3px 0;
             transition: all 0.3s ease;
             border-radius: 1px;
@@ -295,7 +319,7 @@ https://templatemo.com/tm-593-personal-shape
             right: -100%;
             width: 100%;
             height: 100vh;
-            background: rgba(15, 23, 42, 0.98);
+            background: --gradient-updown;
             backdrop-filter: blur(20px);
             display: flex;
             flex-direction: column;
@@ -332,13 +356,13 @@ https://templatemo.com/tm-593-personal-shape
         .mobile-menu.active .mobile-nav-links li:nth-child(4) { transition-delay: 0.4s; }
 
         .mobile-nav-links a {
-            font-family: 'Roboto';
+            font-family: VT323;
             font-size: 2.5rem;
             font-weight: 500;
-            color: var(--text-light);
+            color: var(--primary-color);
             text-decoration: none;
             transition: all 0.3s ease;
-            background: var(--gradient-elegant);
+            background: var(--text-primary);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -355,7 +379,7 @@ https://templatemo.com/tm-593-personal-shape
             align-items: center;
             justify-content: center;
             /*background: var(--gradient-elegant);*/
-            background: linear-gradient(180deg,rgba(85, 58, 156, 1) 0%, rgba(182, 170, 213, 1) 17%, rgba(211, 204, 230, 1) 27%, rgba(255, 255, 255, 1) 34%);
+            background: var(--gradient-updown);
             position: relative;
             overflow: hidden;
         }
@@ -368,7 +392,7 @@ https://templatemo.com/tm-593-personal-shape
             right: 0;
             bottom: 0;
             /*background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');*/
-            background: linear-gradient(0deg,rgba(0, 0, 0, 0) 46%, rgba(163, 140, 220, 1) 88%);
+            background: var(--gradient-updown);
             animation: float 25s ease-in-out infinite;
             opacity: 0.7;
         }
@@ -380,8 +404,7 @@ https://templatemo.com/tm-593-personal-shape
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            background: var(--gradient-updown);
             animation: pulse 4s ease-in-out infinite alternate;
         }
 
@@ -405,7 +428,7 @@ https://templatemo.com/tm-593-personal-shape
             z-index: 2;
             position: relative;
             max-width: 900px;
-            padding: 1rem 2rem;
+            padding: 0 2rem;
         }
 
         .hero-subtitle {
@@ -668,6 +691,29 @@ https://templatemo.com/tm-593-personal-shape
             margin-bottom: 2rem;
             line-height: 1.3;
         }
+
+        .articles-text ul {
+            list-style: none; /* Quitamos el bullet por defecto */
+            padding-left: 0;  /* Ajustamos padding del ul */
+        }
+
+        .articles-text li {
+            position: relative;
+            color: #553A9C;
+            font-weight: 300;
+            padding-left: 2rem; /* Espacio para el bullet */
+            margin-bottom: 0.5rem; /* Espacio entre items */
+            font-family: 'Roboto';
+            font-size: 1.5rem;
+            margin-top: 0.5;
+            /* Bullet como background */
+            background-image: url('../images/bullet.png');
+            background-repeat: no-repeat;
+            background-size: 1rem 1rem; /* Tamaño exacto del bullet */
+            background-position: left center; /* Alineado a la izquierda y verticalmente centrado */
+        }
+
+
 
         .topics {
             display: flex;

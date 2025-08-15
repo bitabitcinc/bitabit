@@ -14,6 +14,11 @@ https://templatemo.com/tm-593-personal-shape
   src: url(fonts/VT323-Regular.ttf);
 }
 
+@font-face {
+  font-family: body-font;
+  src: 'Roboto'; /*'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;*/
+}
+
         * {
             margin: 0;
             padding: 0;
@@ -52,13 +57,22 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .footer-content {
-            display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             gap: 1rem;
             position: relative;
             z-index: 2;
+            text-align: center;
+        }
+
+        .footer p{
+            color: var(--text-primary);
+            font-family: VT323;
+            font-size: 1.75rem;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+            
         }
 
         .footer-left p {
@@ -78,7 +92,7 @@ https://templatemo.com/tm-593-personal-shape
             text-decoration: none;
             font-size: 1.2rem;
             transition: all 0.3s ease;
-            position: relative;
+            position: center;
         }
 
         .footer-right a:hover {
@@ -156,7 +170,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         body {
-            font-family: 'Roboto', VT323;/*'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;*/
+            font-family: body-font;
             line-height: 1.7;
             color: var(--text-primary);
             scroll-behavior: smooth;
@@ -166,6 +180,7 @@ https://templatemo.com/tm-593-personal-shape
 
         /* Navigation */
         nav {
+            font-family: VT323;
             position: fixed;
             top: 0;
             width: 100%;
@@ -195,7 +210,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .logo {
-            font-family: VT323;/*'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;*/
+            font-family: VT323;
             font-size: 1.75rem;
             font-weight: 700;
             letter-spacing: -0.5px;
@@ -204,7 +219,7 @@ https://templatemo.com/tm-593-personal-shape
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 2rem;
             align-items: center;
         }
 
@@ -252,7 +267,7 @@ https://templatemo.com/tm-593-personal-shape
         .hamburger {
             width: 25px;
             height: 3px;
-            background: var(--text-primary);
+            background: var(--secondary-color);
             margin: 3px 0;
             transition: all 0.3s ease;
             border-radius: 1px;
@@ -276,7 +291,7 @@ https://templatemo.com/tm-593-personal-shape
             right: -100%;
             width: 100%;
             height: 100vh;
-            background: rgba(15, 23, 42, 0.98);
+            background: --gradient-updown;
             backdrop-filter: blur(20px);
             display: flex;
             flex-direction: column;
@@ -313,13 +328,13 @@ https://templatemo.com/tm-593-personal-shape
         .mobile-menu.active .mobile-nav-links li:nth-child(4) { transition-delay: 0.4s; }
 
         .mobile-nav-links a {
-            font-family: 'Roboto';
+            font-family: VT323;
             font-size: 2.5rem;
             font-weight: 500;
-            color: var(--text-light);
+            color: var(--primary-color);
             text-decoration: none;
             transition: all 0.3s ease;
-            background: var(--gradient-elegant);
+            background: var(--text-primary);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -401,7 +416,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .hero h1 {
-            font-family: VT323, 'Roboto';
+            font-family: VT323, body-font;
             font-size: 5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
@@ -614,7 +629,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .articles-text h2 {
-            font-family: 'Roboto';
+            font-family: body-font;
             font-size: 1.8rem;
             color: var(--text-primary);
             margin-bottom: 2rem;
@@ -632,7 +647,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .articles-text h4 {
-            font-family: 'Roboto';
+            font-family: body-font;
             font-size: 1.3rem;
             margin-bottom: 1rem;
             color: var(--text-primary);
@@ -641,7 +656,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .articles-text p {
-            font-family: 'Roboto';
+            font-family: body-font;
             font-size: 1.3rem;
             color: var(--text-primary);
             margin-bottom: 2rem;
@@ -680,7 +695,7 @@ https://templatemo.com/tm-593-personal-shape
             background: var(--bg-primary);
         }
         .portfolio p{
-            font-family: 'Roboto';
+            font-family: body-font;
             font-size: 1.3rem;
             color: var(--text-primary);
             margin-bottom: 2rem;
@@ -759,7 +774,7 @@ https://templatemo.com/tm-593-personal-shape
         }
 
         .portfolio-content h4 {
-            font-family: 'Roboto';
+            font-family: body-font;
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--text-primary);
@@ -819,7 +834,7 @@ https://templatemo.com/tm-593-personal-shape
             border-radius: 15px;
             background: rgba(255, 255, 255, 0.08);
             color: var(--text-light);
-            font-family: 'Roboto';
+            font-family: body-font;
             font-size: 1rem;
             font-weight: 400;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
