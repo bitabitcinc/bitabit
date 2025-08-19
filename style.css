@@ -628,6 +628,10 @@ https://templatemo.com/tm-593-personal-shape
             background: url('images/quantum-crypto.png') center/cover;
         }
 
+        .articles-image.beck {
+            background: url('images/naos.jpeg') center/cover;
+        }
+
         .articles-text h2 {
             font-family: body-font;
             font-size: 1.8rem;
